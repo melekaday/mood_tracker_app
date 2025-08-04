@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruh Hali Geçmişi</title>
+</head>
+<body>
+    <h1>Geçmiş Ruh Halleri</h1>
+    <ul>
+        {% for mood, date in moods %}
+            <li><strong>{{ mood }}</strong> - {{ date }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/">Geri Dön</a>
+</body>
+</html>
